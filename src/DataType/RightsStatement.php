@@ -1,5 +1,5 @@
 <?php
-namespace RightsStatements\DataType;
+namespace CreativeCommons\DataType;
 
 use Omeka\Api\Adapter\AbstractEntityAdapter;
 use Omeka\Api\Representation\ValueRepresentation;
@@ -8,7 +8,7 @@ use Omeka\Entity\Value;
 use Laminas\Form\Element\Select;
 use Laminas\View\Renderer\PhpRenderer;
 
-class RightsStatement extends Uri
+class CreativeCommons extends Uri
 {
     /**
      * @var array
@@ -42,17 +42,17 @@ class RightsStatement extends Uri
 
     public function getName()
     {
-        return 'rights_statement';
+        return 'creative-commons';
     }
 
     public function getLabel()
     {
-        return 'Rights Statement';
+        return 'Creative Commons License';
     }
 
     public function form(PhpRenderer $view)
     {
-        $select = new Select('rights-statement');
+        $select = new Select('creative-commons');
         $select
             ->setAttribute('data-value-key', '@id')
             ->setEmptyOption('Select Below')
