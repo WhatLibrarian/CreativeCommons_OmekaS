@@ -1,5 +1,5 @@
 <?php
-namespace RightsStatements;
+namespace CreativeCommons;
 
 use Omeka\Module\AbstractModule;
 
